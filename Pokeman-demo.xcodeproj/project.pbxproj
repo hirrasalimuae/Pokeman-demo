@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1890A8AF285BE2DA005B50A6 /* ListTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890A8AE285BE2DA005B50A6 /* ListTableViewCellViewModel.swift */; };
+		1890A8B1285BE3B7005B50A6 /* OptionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890A8B0285BE3B7005B50A6 /* OptionVM.swift */; };
+		1890A8BF285BE9E0005B50A6 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890A8BD285BE9E0005B50A6 /* UserInfo.swift */; };
+		1890A8C0285BE9E0005B50A6 /* UserInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890A8BE285BE9E0005B50A6 /* UserInfo+CoreDataProperties.swift */; };
+		1890A8C3285BEBEC005B50A6 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890A8C2285BEBEC005B50A6 /* Users.swift */; };
+		18A8FFF2284D4BCA00558417 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8FFF1284D4BCA00558417 /* CoreDataStack.swift */; };
+		18A8FFF4284D4E8A00558417 /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8FFF3284D4E8A00558417 /* UIResponder.swift */; };
+		18B97EB82848D24300E4E2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97EB72848D24300E4E2C3 /* AppDelegate.swift */; };
+		18B97EBA2848D24300E4E2C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97EB92848D24300E4E2C3 /* SceneDelegate.swift */; };
+		18B97EBC2848D24300E4E2C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97EBB2848D24300E4E2C3 /* HomeViewController.swift */; };
+		18B97EBF2848D24300E4E2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EBD2848D24300E4E2C3 /* Main.storyboard */; };
+		18B97EC22848D24300E4E2C3 /* Pokeman_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18B97EC02848D24300E4E2C3 /* Pokeman_demo.xcdatamodeld */; };
+		18B97EC42848D24400E4E2C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EC32848D24400E4E2C3 /* Assets.xcassets */; };
+		18B97EC72848D24400E4E2C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EC52848D24400E4E2C3 /* LaunchScreen.storyboard */; };
+		18B97ED22848D24400E4E2C3 /* Pokeman_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97ED12848D24400E4E2C3 /* Pokeman_demoTests.swift */; };
+		18B97EDC2848D24400E4E2C3 /* Pokeman_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97EDB2848D24400E4E2C3 /* Pokeman_demoUITests.swift */; };
+		18B97EDE2848D24400E4E2C3 /* Pokeman_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97EDD2848D24400E4E2C3 /* Pokeman_demoUITestsLaunchTests.swift */; };
+		18B97EF42848D96D00E4E2C3 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EED2848D96D00E4E2C3 /* Roboto-Light.ttf */; };
+		18B97EF52848D96D00E4E2C3 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EEE2848D96D00E4E2C3 /* Montserrat-Bold.otf */; };
+		18B97EF62848D96D00E4E2C3 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EEF2848D96D00E4E2C3 /* Roboto-Regular.ttf */; };
+		18B97EF72848D96D00E4E2C3 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EF02848D96D00E4E2C3 /* Montserrat-Medium.otf */; };
+		18B97EF82848D96D00E4E2C3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EF12848D96D00E4E2C3 /* Roboto-Bold.ttf */; };
+		18B97EF92848D96D00E4E2C3 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EF22848D96D00E4E2C3 /* Montserrat-Light.otf */; };
+		18B97EFA2848D96D00E4E2C3 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B97EF32848D96D00E4E2C3 /* Roboto-Medium.ttf */; };
+		18B97EFF2848DBD100E4E2C3 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97EFE2848DBD100E4E2C3 /* UIFont+Extension.swift */; };
+		18B97F032848DF9600E4E2C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F022848DF9600E4E2C3 /* HomeView.swift */; };
+		18B97F0A2848E1E300E4E2C3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F092848E1E300E4E2C3 /* BaseViewController.swift */; };
+		18B97F0F2848E3DC00E4E2C3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F0E2848E3DC00E4E2C3 /* HomeViewModel.swift */; };
+		18B97F122848E41E00E4E2C3 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F112848E41E00E4E2C3 /* BaseViewModel.swift */; };
+		18B97F182848EC1700E4E2C3 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B97F172848EC1700E4E2C3 /* Color.xcassets */; };
+		18B97F1D2848ECAF00E4E2C3 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F1C2848ECAF00E4E2C3 /* UIButton+Extension.swift */; };
+		18B97F202848ECEF00E4E2C3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F1F2848ECBB00E4E2C3 /* UIView+Extension.swift */; };
+		18B97F232848ED4500E4E2C3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F222848ED4500E4E2C3 /* UIColor+Extension.swift */; };
+		18B97F29284A243C00E4E2C3 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F28284A243C00E4E2C3 /* ListViewModel.swift */; };
+		18B97F2B284A245D00E4E2C3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F2A284A245D00E4E2C3 /* ListViewController.swift */; };
+		18B97F2D284A248900E4E2C3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F2C284A248900E4E2C3 /* ListView.swift */; };
+		18B97F32284A2B9900E4E2C3 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B97F30284A2B9900E4E2C3 /* ListTableViewCell.swift */; };
+		18B97F33284A2B9900E4E2C3 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B97F31284A2B9900E4E2C3 /* ListTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B97ECE2848D24400E4E2C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B97EAC2848D24300E4E2C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B97EB32848D24300E4E2C3;
+			remoteInfo = "Pokeman-demo";
+		};
+		18B97ED82848D24400E4E2C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B97EAC2848D24300E4E2C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B97EB32848D24300E4E2C3;
+			remoteInfo = "Pokeman-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1890A8AE285BE2DA005B50A6 /* ListTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		1890A8B0285BE3B7005B50A6 /* OptionVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionVM.swift; sourceTree = "<group>"; };
+		1890A8BD285BE9E0005B50A6 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		1890A8BE285BE9E0005B50A6 /* UserInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1890A8C2285BEBEC005B50A6 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		18A8FFF1284D4BCA00558417 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		18A8FFF3284D4E8A00558417 /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
+		18B97EB42848D24300E4E2C3 /* Pokeman-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokeman-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B97EB72848D24300E4E2C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18B97EB92848D24300E4E2C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18B97EBB2848D24300E4E2C3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18B97EBE2848D24300E4E2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B97EC12848D24300E4E2C3 /* Pokeman_demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pokeman_demo.xcdatamodel; sourceTree = "<group>"; };
+		18B97EC32848D24400E4E2C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B97EC62848D24400E4E2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B97EC82848D24400E4E2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B97ECD2848D24400E4E2C3 /* Pokeman-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokeman-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B97ED12848D24400E4E2C3 /* Pokeman_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokeman_demoTests.swift; sourceTree = "<group>"; };
+		18B97ED72848D24400E4E2C3 /* Pokeman-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokeman-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B97EDB2848D24400E4E2C3 /* Pokeman_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokeman_demoUITests.swift; sourceTree = "<group>"; };
+		18B97EDD2848D24400E4E2C3 /* Pokeman_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokeman_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18B97EED2848D96D00E4E2C3 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		18B97EEE2848D96D00E4E2C3 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		18B97EEF2848D96D00E4E2C3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		18B97EF02848D96D00E4E2C3 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		18B97EF12848D96D00E4E2C3 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		18B97EF22848D96D00E4E2C3 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		18B97EF32848D96D00E4E2C3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		18B97EFE2848DBD100E4E2C3 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		18B97F022848DF9600E4E2C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		18B97F092848E1E300E4E2C3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		18B97F0E2848E3DC00E4E2C3 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		18B97F112848E41E00E4E2C3 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewModel.swift; path = ../../../../../../../BaseViewModel.swift; sourceTree = "<group>"; };
+		18B97F172848EC1700E4E2C3 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		18B97F1C2848ECAF00E4E2C3 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		18B97F1F2848ECBB00E4E2C3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		18B97F222848ED4500E4E2C3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "../../../../../../../UIColor+Extension.swift"; sourceTree = "<group>"; };
+		18B97F28284A243C00E4E2C3 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		18B97F2A284A245D00E4E2C3 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		18B97F2C284A248900E4E2C3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		18B97F30284A2B9900E4E2C3 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		18B97F31284A2B9900E4E2C3 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B97EB12848D24300E4E2C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B97ECA2848D24400E4E2C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B97ED42848D24400E4E2C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1890A8AC285BE270005B50A6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1890A8B0285BE3B7005B50A6 /* OptionVM.swift */,
+				1890A8AE285BE2DA005B50A6 /* ListTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1890A8AD285BE27B005B50A6 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F30284A2B9900E4E2C3 /* ListTableViewCell.swift */,
+				18B97F31284A2B9900E4E2C3 /* ListTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		1890A8B2285BE645005B50A6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1890A8B3285BE64C005B50A6 /* Models */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1890A8B3285BE64C005B50A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1890A8C1285BEBCA005B50A6 /* Users */,
+				1890A8B4285BE652005B50A6 /* Datastores */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1890A8B4285BE652005B50A6 /* Datastores */ = {
+			isa = PBXGroup;
+			children = (
+				1890A8BD285BE9E0005B50A6 /* UserInfo.swift */,
+				1890A8BE285BE9E0005B50A6 /* UserInfo+CoreDataProperties.swift */,
+			);
+			path = Datastores;
+			sourceTree = "<group>";
+		};
+		1890A8C1285BEBCA005B50A6 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				1890A8C2285BEBEC005B50A6 /* Users.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		18A8FFF0284D4B8E00558417 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				18A8FFF1284D4BCA00558417 /* CoreDataStack.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		18B97EAB2848D24300E4E2C3 = {
+			isa = PBXGroup;
+			children = (
+				18B97EB62848D24300E4E2C3 /* Pokeman-demo */,
+				18B97ED02848D24400E4E2C3 /* Pokeman-demoTests */,
+				18B97EDA2848D24400E4E2C3 /* Pokeman-demoUITests */,
+				18B97EB52848D24300E4E2C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B97EB52848D24300E4E2C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B97EB42848D24300E4E2C3 /* Pokeman-demo.app */,
+				18B97ECD2848D24400E4E2C3 /* Pokeman-demoTests.xctest */,
+				18B97ED72848D24400E4E2C3 /* Pokeman-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B97EB62848D24300E4E2C3 /* Pokeman-demo */ = {
+			isa = PBXGroup;
+			children = (
+				1890A8B2285BE645005B50A6 /* Modules */,
+				18A8FFF0284D4B8E00558417 /* Base */,
+				18B97F34284A34D600E4E2C3 /* Model */,
+				18B97F082848E1A600E4E2C3 /* MVVM */,
+				18B97EFB2848DBA300E4E2C3 /* Utility */,
+				18B97EEB2848D88200E4E2C3 /* Support */,
+				18B97EEA2848D86900E4E2C3 /* Delegate */,
+				18B97EBD2848D24300E4E2C3 /* Main.storyboard */,
+				18B97EC32848D24400E4E2C3 /* Assets.xcassets */,
+				18B97F172848EC1700E4E2C3 /* Color.xcassets */,
+				18B97EC52848D24400E4E2C3 /* LaunchScreen.storyboard */,
+				18B97EC82848D24400E4E2C3 /* Info.plist */,
+				18B97EC02848D24300E4E2C3 /* Pokeman_demo.xcdatamodeld */,
+			);
+			path = "Pokeman-demo";
+			sourceTree = "<group>";
+		};
+		18B97ED02848D24400E4E2C3 /* Pokeman-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B97ED12848D24400E4E2C3 /* Pokeman_demoTests.swift */,
+			);
+			path = "Pokeman-demoTests";
+			sourceTree = "<group>";
+		};
+		18B97EDA2848D24400E4E2C3 /* Pokeman-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18B97EDB2848D24400E4E2C3 /* Pokeman_demoUITests.swift */,
+				18B97EDD2848D24400E4E2C3 /* Pokeman_demoUITestsLaunchTests.swift */,
+			);
+			path = "Pokeman-demoUITests";
+			sourceTree = "<group>";
+		};
+		18B97EEA2848D86900E4E2C3 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				18B97EB92848D24300E4E2C3 /* SceneDelegate.swift */,
+				18B97EB72848D24300E4E2C3 /* AppDelegate.swift */,
+				18A8FFF3284D4E8A00558417 /* UIResponder.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		18B97EEB2848D88200E4E2C3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				18B97EEC2848D88C00E4E2C3 /* Fonts */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		18B97EEC2848D88C00E4E2C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				18B97EEE2848D96D00E4E2C3 /* Montserrat-Bold.otf */,
+				18B97EF22848D96D00E4E2C3 /* Montserrat-Light.otf */,
+				18B97EF02848D96D00E4E2C3 /* Montserrat-Medium.otf */,
+				18B97EF12848D96D00E4E2C3 /* Roboto-Bold.ttf */,
+				18B97EED2848D96D00E4E2C3 /* Roboto-Light.ttf */,
+				18B97EF32848D96D00E4E2C3 /* Roboto-Medium.ttf */,
+				18B97EEF2848D96D00E4E2C3 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		18B97EFB2848DBA300E4E2C3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				18B97EFC2848DBAA00E4E2C3 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		18B97EFC2848DBAA00E4E2C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F212848ED3100E4E2C3 /* UIColor+Extension */,
+				18B97F1E2848ECB700E4E2C3 /* UIView+Extension */,
+				18B97F192848EC7200E4E2C3 /* UIButton+Extension */,
+				18B97EFD2848DBB700E4E2C3 /* UIFontExtension */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18B97EFD2848DBB700E4E2C3 /* UIFontExtension */ = {
+			isa = PBXGroup;
+			children = (
+				18B97EFE2848DBD100E4E2C3 /* UIFont+Extension.swift */,
+			);
+			path = UIFontExtension;
+			sourceTree = "<group>";
+		};
+		18B97F002848DF5B00E4E2C3 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F0B2848E38400E4E2C3 /* ViewModel */,
+				18B97F042848DFB900E4E2C3 /* Controller */,
+				18B97F012848DF6300E4E2C3 /* View */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		18B97F012848DF6300E4E2C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F022848DF9600E4E2C3 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B97F042848DFB900E4E2C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B97EBB2848D24300E4E2C3 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B97F052848E11300E4E2C3 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F102848E40800E4E2C3 /* ViewModel */,
+				18B97F092848E1E300E4E2C3 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		18B97F082848E1A600E4E2C3 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F24284A23F600E4E2C3 /* ListViewController */,
+				18B97F052848E11300E4E2C3 /* BaseViewController */,
+				18B97F002848DF5B00E4E2C3 /* HomeViewController */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		18B97F0B2848E38400E4E2C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F0E2848E3DC00E4E2C3 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18B97F102848E40800E4E2C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F112848E41E00E4E2C3 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18B97F192848EC7200E4E2C3 /* UIButton+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F1C2848ECAF00E4E2C3 /* UIButton+Extension.swift */,
+			);
+			path = "UIButton+Extension";
+			sourceTree = "<group>";
+		};
+		18B97F1E2848ECB700E4E2C3 /* UIView+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F1F2848ECBB00E4E2C3 /* UIView+Extension.swift */,
+			);
+			path = "UIView+Extension";
+			sourceTree = "<group>";
+		};
+		18B97F212848ED3100E4E2C3 /* UIColor+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F222848ED4500E4E2C3 /* UIColor+Extension.swift */,
+			);
+			path = "UIColor+Extension";
+			sourceTree = "<group>";
+		};
+		18B97F24284A23F600E4E2C3 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F2E284A2B4D00E4E2C3 /* Cells */,
+				18B97F27284A241C00E4E2C3 /* View */,
+				18B97F26284A241400E4E2C3 /* Controller */,
+				18B97F25284A240A00E4E2C3 /* ViewModel */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		18B97F25284A240A00E4E2C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F28284A243C00E4E2C3 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18B97F26284A241400E4E2C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F2A284A245D00E4E2C3 /* ListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B97F27284A241C00E4E2C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F2C284A248900E4E2C3 /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B97F2E284A2B4D00E4E2C3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18B97F2F284A2B5600E4E2C3 /* ListTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18B97F2F284A2B5600E4E2C3 /* ListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1890A8AD285BE27B005B50A6 /* TableViewCell */,
+				1890A8AC285BE270005B50A6 /* ViewModel */,
+			);
+			path = ListTableViewCell;
+			sourceTree = "<group>";
+		};
+		18B97F34284A34D600E4E2C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B97EB32848D24300E4E2C3 /* Pokeman-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B97EE12848D24400E4E2C3 /* Build configuration list for PBXNativeTarget "Pokeman-demo" */;
+			buildPhases = (
+				18B97EB02848D24300E4E2C3 /* Sources */,
+				18B97EB12848D24300E4E2C3 /* Frameworks */,
+				18B97EB22848D24300E4E2C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pokeman-demo";
+			productName = "Pokeman-demo";
+			productReference = 18B97EB42848D24300E4E2C3 /* Pokeman-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B97ECC2848D24400E4E2C3 /* Pokeman-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B97EE42848D24400E4E2C3 /* Build configuration list for PBXNativeTarget "Pokeman-demoTests" */;
+			buildPhases = (
+				18B97EC92848D24400E4E2C3 /* Sources */,
+				18B97ECA2848D24400E4E2C3 /* Frameworks */,
+				18B97ECB2848D24400E4E2C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B97ECF2848D24400E4E2C3 /* PBXTargetDependency */,
+			);
+			name = "Pokeman-demoTests";
+			productName = "Pokeman-demoTests";
+			productReference = 18B97ECD2848D24400E4E2C3 /* Pokeman-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B97ED62848D24400E4E2C3 /* Pokeman-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B97EE72848D24400E4E2C3 /* Build configuration list for PBXNativeTarget "Pokeman-demoUITests" */;
+			buildPhases = (
+				18B97ED32848D24400E4E2C3 /* Sources */,
+				18B97ED42848D24400E4E2C3 /* Frameworks */,
+				18B97ED52848D24400E4E2C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B97ED92848D24400E4E2C3 /* PBXTargetDependency */,
+			);
+			name = "Pokeman-demoUITests";
+			productName = "Pokeman-demoUITests";
+			productReference = 18B97ED72848D24400E4E2C3 /* Pokeman-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B97EAC2848D24300E4E2C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					18B97EB32848D24300E4E2C3 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					18B97ECC2848D24400E4E2C3 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 18B97EB32848D24300E4E2C3;
+					};
+					18B97ED62848D24400E4E2C3 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 18B97EB32848D24300E4E2C3;
+					};
+				};
+			};
+			buildConfigurationList = 18B97EAF2848D24300E4E2C3 /* Build configuration list for PBXProject "Pokeman-demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B97EAB2848D24300E4E2C3;
+			productRefGroup = 18B97EB52848D24300E4E2C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B97EB32848D24300E4E2C3 /* Pokeman-demo */,
+				18B97ECC2848D24400E4E2C3 /* Pokeman-demoTests */,
+				18B97ED62848D24400E4E2C3 /* Pokeman-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B97EB22848D24300E4E2C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B97EFA2848D96D00E4E2C3 /* Roboto-Medium.ttf in Resources */,
+				18B97F33284A2B9900E4E2C3 /* ListTableViewCell.xib in Resources */,
+				18B97EF62848D96D00E4E2C3 /* Roboto-Regular.ttf in Resources */,
+				18B97EF52848D96D00E4E2C3 /* Montserrat-Bold.otf in Resources */,
+				18B97EC72848D24400E4E2C3 /* LaunchScreen.storyboard in Resources */,
+				18B97EC42848D24400E4E2C3 /* Assets.xcassets in Resources */,
+				18B97F182848EC1700E4E2C3 /* Color.xcassets in Resources */,
+				18B97EF42848D96D00E4E2C3 /* Roboto-Light.ttf in Resources */,
+				18B97EF72848D96D00E4E2C3 /* Montserrat-Medium.otf in Resources */,
+				18B97EF82848D96D00E4E2C3 /* Roboto-Bold.ttf in Resources */,
+				18B97EBF2848D24300E4E2C3 /* Main.storyboard in Resources */,
+				18B97EF92848D96D00E4E2C3 /* Montserrat-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B97ECB2848D24400E4E2C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B97ED52848D24400E4E2C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B97EB02848D24300E4E2C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1890A8AF285BE2DA005B50A6 /* ListTableViewCellViewModel.swift in Sources */,
+				18B97F202848ECEF00E4E2C3 /* UIView+Extension.swift in Sources */,
+				18B97F32284A2B9900E4E2C3 /* ListTableViewCell.swift in Sources */,
+				18B97EFF2848DBD100E4E2C3 /* UIFont+Extension.swift in Sources */,
+				18B97F2D284A248900E4E2C3 /* ListView.swift in Sources */,
+				18A8FFF4284D4E8A00558417 /* UIResponder.swift in Sources */,
+				18B97EC22848D24300E4E2C3 /* Pokeman_demo.xcdatamodeld in Sources */,
+				18B97F232848ED4500E4E2C3 /* UIColor+Extension.swift in Sources */,
+				18B97F1D2848ECAF00E4E2C3 /* UIButton+Extension.swift in Sources */,
+				18B97EBC2848D24300E4E2C3 /* HomeViewController.swift in Sources */,
+				18B97F2B284A245D00E4E2C3 /* ListViewController.swift in Sources */,
+				18B97F0F2848E3DC00E4E2C3 /* HomeViewModel.swift in Sources */,
+				18B97F032848DF9600E4E2C3 /* HomeView.swift in Sources */,
+				1890A8BF285BE9E0005B50A6 /* UserInfo.swift in Sources */,
+				18A8FFF2284D4BCA00558417 /* CoreDataStack.swift in Sources */,
+				1890A8C3285BEBEC005B50A6 /* Users.swift in Sources */,
+				1890A8C0285BE9E0005B50A6 /* UserInfo+CoreDataProperties.swift in Sources */,
+				1890A8B1285BE3B7005B50A6 /* OptionVM.swift in Sources */,
+				18B97F122848E41E00E4E2C3 /* BaseViewModel.swift in Sources */,
+				18B97F29284A243C00E4E2C3 /* ListViewModel.swift in Sources */,
+				18B97EB82848D24300E4E2C3 /* AppDelegate.swift in Sources */,
+				18B97F0A2848E1E300E4E2C3 /* BaseViewController.swift in Sources */,
+				18B97EBA2848D24300E4E2C3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B97EC92848D24400E4E2C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B97ED22848D24400E4E2C3 /* Pokeman_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B97ED32848D24400E4E2C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B97EDC2848D24400E4E2C3 /* Pokeman_demoUITests.swift in Sources */,
+				18B97EDE2848D24400E4E2C3 /* Pokeman_demoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B97ECF2848D24400E4E2C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B97EB32848D24300E4E2C3 /* Pokeman-demo */;
+			targetProxy = 18B97ECE2848D24400E4E2C3 /* PBXContainerItemProxy */;
+		};
+		18B97ED92848D24400E4E2C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B97EB32848D24300E4E2C3 /* Pokeman-demo */;
+			targetProxy = 18B97ED82848D24400E4E2C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B97EBD2848D24300E4E2C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B97EBE2848D24300E4E2C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B97EC52848D24400E4E2C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B97EC62848D24400E4E2C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B97EDF2848D24400E4E2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18B97EE02848D24400E4E2C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B97EE22848D24400E4E2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2A5QLQJFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pokeman-demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokeman.Pokeman-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B97EE32848D24400E4E2C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2A5QLQJFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pokeman-demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokeman.Pokeman-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18B97EE52848D24400E4E2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2A5QLQJFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokeman.Pokeman-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokeman-demo.app/Pokeman-demo";
+			};
+			name = Debug;
+		};
+		18B97EE62848D24400E4E2C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2A5QLQJFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokeman.Pokeman-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokeman-demo.app/Pokeman-demo";
+			};
+			name = Release;
+		};
+		18B97EE82848D24400E4E2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2A5QLQJFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokeman.Pokeman-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pokeman-demo";
+			};
+			name = Debug;
+		};
+		18B97EE92848D24400E4E2C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2A5QLQJFJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pokeman.Pokeman-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pokeman-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B97EAF2848D24300E4E2C3 /* Build configuration list for PBXProject "Pokeman-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B97EDF2848D24400E4E2C3 /* Debug */,
+				18B97EE02848D24400E4E2C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B97EE12848D24400E4E2C3 /* Build configuration list for PBXNativeTarget "Pokeman-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B97EE22848D24400E4E2C3 /* Debug */,
+				18B97EE32848D24400E4E2C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B97EE42848D24400E4E2C3 /* Build configuration list for PBXNativeTarget "Pokeman-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B97EE52848D24400E4E2C3 /* Debug */,
+				18B97EE62848D24400E4E2C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B97EE72848D24400E4E2C3 /* Build configuration list for PBXNativeTarget "Pokeman-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B97EE82848D24400E4E2C3 /* Debug */,
+				18B97EE92848D24400E4E2C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18B97EC02848D24300E4E2C3 /* Pokeman_demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18B97EC12848D24300E4E2C3 /* Pokeman_demo.xcdatamodel */,
+			);
+			currentVersion = 18B97EC12848D24300E4E2C3 /* Pokeman_demo.xcdatamodel */;
+			path = Pokeman_demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18B97EAC2848D24300E4E2C3 /* Project object */;
+}
