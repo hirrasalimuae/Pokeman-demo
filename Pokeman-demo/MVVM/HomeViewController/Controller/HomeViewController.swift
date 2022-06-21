@@ -24,7 +24,6 @@ class HomeViewController: BaseViewController {
         self.customView.listButton.setTitle(viewModel.listButtonTitle, for: .normal)
         self.customView.listButton.createButton(color: .black,font: UIFont.fontName(.MontserratMedium, size: 12),borderColor: .black,bortherWidth: 1,cornerRadius: 8)
         self.customView.bottomView.createView()
-        self.customView.toggleView.layer.backgroundColor = UIColor.backgroundColor?.cgColor
         self.customView.toggleView.layer.cornerRadius = 5
         self.customView.listButton.addTarget(self, action: #selector(self.listButton(_:)), for: .touchUpInside)
 

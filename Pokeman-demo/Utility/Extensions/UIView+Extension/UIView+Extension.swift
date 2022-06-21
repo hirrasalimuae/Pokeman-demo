@@ -42,7 +42,7 @@ extension UIView {
     }
    
     func prepareDropShadow(_ radius: CGFloat = 20) {
-        layer.shadowColor = UIColor.dropShadow?.cgColor
+        layer.shadowColor = UIColor.gray.cgColor
         layer.shadowOpacity = 1
         layer.shadowOffset = .zero
         layer.shadowRadius = radius
